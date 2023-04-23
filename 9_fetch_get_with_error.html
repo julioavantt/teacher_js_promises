@@ -1,0 +1,14 @@
+<script>
+	const url = "https://64446adc914c816083b9bf07.mockapi.io/products"
+
+	fetch(url)
+		.then(response => {
+			if (response.status === 200) {
+				throw new Error("Tremendo error")
+			} else {
+				response.json()
+			}
+		})
+		.then(data => console.log(data))
+		.catch(error => console.log(error))
+</script>

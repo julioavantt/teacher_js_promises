@@ -2,10 +2,7 @@
 	/* "eslint.options": {
 		"configFile": ".eslintrc.json"
 	}, */
-	"eslint.validate": [
-		"javascript",
-		"javascriptreact"
-	],
+	"eslint.validate": ["javascript", "javascriptreact"],
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true
 	},
