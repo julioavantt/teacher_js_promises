@@ -1,0 +1,21 @@
+import * as React from "react"
+import "./style.css"
+
+export default function App() {
+	const [list, setList] = React.useState([])
+
+	React.useEffect(() => {
+		fetch("https://64446adc914c816083b9bf07.mockapi.io/products")
+			.then(response => response.json())
+			.then(data => setList(data))
+	})
+
+	return (
+		<div>
+			<h1>Hello StackBlitz!</h1>
+			{list.map(item => (
+				<div>{item.name}</div>
+			))}
+		</div>
+	)
+}
