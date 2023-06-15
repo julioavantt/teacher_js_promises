@@ -4,6 +4,8 @@ const myPromise = new Promise((resolve, reject) =>
 	resolve("myPromise ok")
 )
 
-myPromise.then(result => console.log(result))
+console.log(myPromise)
+
+myPromise.then(result => console.log(1, result))
 
 console.log("after promise")

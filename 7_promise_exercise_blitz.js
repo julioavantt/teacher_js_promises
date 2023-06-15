@@ -1,0 +1,16 @@
+const products = [
+	{ id: 1, name: "Calzas", description: "Para invierno", stock: 22 },
+	{ id: 2, name: "Zapatillas", description: "Running", stock: 12 },
+	{
+		id: 3,
+		name: "Pelota",
+		description: "Pelota de futbol",
+		stock: 24,
+	},
+]
+
+new Promise((resolve, reject) => {
+	setTimeout(() => {
+		resolve(products)
+	}, 10000)
+}).then(result => console.log(result))
