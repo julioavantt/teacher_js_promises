@@ -1,6 +1,21 @@
 <script>
-	const url = "https://64446adc914c816083b9bf07.mockapi.io/products"
+	const url1 = "https://pokeapi.co/api/v2/pokemon/ditto"
+	const url2 = "https://pokeapi.co/api/v2/pokemon/bulbasaur"
 
 	// GET es por default, no lleva body
-	fetch(url).then(response => console.log(response))
+	fetch("https://pokeapi.co/api/v2/pokemon/ditto")
+		.then(response => response.json())
+		.then(data => console.log(data.game_indices))
+
+	/* async function getPokemoncito() {
+		try {
+			const response = await fetch(url2)
+			const poke = await response.json()
+			console.log(poke)
+		} catch (err) {
+			throw new Error(err)
+		}
+	} */
+
+	getPokemoncito()
 </script>

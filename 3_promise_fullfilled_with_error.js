@@ -7,4 +7,4 @@ myPromise
 		throw new Error("Tremendo error")
 		console.log(result)
 	})
-	.catch(error => console.log(error))
+	.catch(error => console.log(3, error))

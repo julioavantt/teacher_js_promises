@@ -1,5 +1,5 @@
 const myPromise = new Promise((resolve, reject) =>
-	reject("myPromise error")
+	resolve("myPromise ok")
 )
 
 myPromise
