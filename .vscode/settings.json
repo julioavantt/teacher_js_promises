@@ -26,5 +26,6 @@
 			"color": "#FFa0a0",
 			"bold": true
 		}
-	]
+	],
+	"liveServer.settings.port": 5501
 }

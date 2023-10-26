@@ -1,0 +1,10 @@
+<script>
+	const myPromise = new Promise(resolve => resolve(1))
+
+	myPromise
+		.then(result => {
+			if (result !== 2) throw new Error("Tremendo error")
+			console.log(result)
+		})
+		.catch(error => console.log(error))
+</script>
