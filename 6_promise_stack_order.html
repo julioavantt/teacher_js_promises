@@ -1,13 +1,13 @@
 <script>
-	console.log("before promise")
+	console.log("before promise") // 1
 
 	const myPromise = new Promise((resolve, reject) =>
 		resolve("myPromise ok")
 	)
 
-	console.log("myPromise", myPromise)
+	console.log("myPromise", myPromise) // 2
 
-	myPromise.then(result => console.log({ result }))
+	myPromise.then(result => console.log({ result })) // 4
 
-	console.log("after promise")
+	console.log("after promise") // 3
 </script>

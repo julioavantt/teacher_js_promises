@@ -1,5 +1,5 @@
 <script>
-	const myPromise = new Promise(resolve => resolve(1))
+	const myPromise = new Promise((resolve, reject) => resolve(1))
 
 	myPromise
 		.then(result => {

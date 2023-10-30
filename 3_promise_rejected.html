@@ -1,5 +1,5 @@
 <script>
-	const myPromise = new Promise((_, reject) => reject("error"))
+	const myPromise = new Promise((resolve, reject) => reject("error"))
 
 	myPromise
 		.then(result => console.log({ result })) // resolve

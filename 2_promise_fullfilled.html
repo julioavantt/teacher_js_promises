@@ -1,6 +1,6 @@
 <script>
 	const myPromise = new Promise((resolve, reject) =>
-		resolve("myPromise ok")
+		reject({ g: 2 })
 	)
 
 	myPromise.then(resultPatito => console.log(resultPatito))

@@ -1,10 +1,10 @@
 <script>
 	const myPromise = new Promise((resolve, reject) =>
-		resolve("myPromise ok")
+		reject("ohh dior mio")
 	)
 
 	myPromise
-		.then(result => console.log(result))
-		.catch(error => console.log(error))
+		.then(result => console.log(1, result))
+		.catch(error => console.log(2, error))
 		.finally(() => console.log("❤️ Me amo"))
 </script>
