@@ -22,7 +22,6 @@
 
 -  Esta aplicación está creada con Create React App.
 -  Clonarla: git clone https://github.com/julioavantt/teacher_js_promises.git
--  Para iniciarla, luego de clonar, ejecute npm i para instalar dependencias y luego mpm start para arrancar el servidor de desarrollo.
 -  Ir a cada archivo y ejecutar Go live (barra inferior a la derecha de Visual Studio Code), si no aparece instalar extensión Live Preview.
 -  Abrir la consola de dev tools.
    <br>
