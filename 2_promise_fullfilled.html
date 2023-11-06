@@ -1,7 +1,11 @@
 <script>
-	const myPromise = new Promise((resolve, reject) =>
-		reject({ g: 2 })
-	)
+	// Promesa fulfilled
 
-	myPromise.then(resultPatito => console.log(resultPatito))
+	const myPromise = new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve("ok")
+		}, 10000)
+	})
+
+	myPromise.then(result => console.log(result))
 </script>

@@ -1,7 +1,20 @@
 <script>
-	const myPromise = new Promise((resolve, reject) => reject("error"))
+	// Promesa que puede ser fulfilled o rejected
+
+	const myPromise = new Promise((resolve, reject) => {
+		const date = new Date()
+		const year = date.getFullYear() // 2022
+
+		if (year === 2023) {
+			//! Si la promesa se completa exitosamente se devuelve resolve y va al THEN.
+			resolve("Es 2023")
+		} else {
+			//! Si la promesa es rechazada se devuelve reject y va al CATCH.
+			reject("error")
+		}
+	})
 
 	myPromise
-		.then(result => console.log({ result })) // resolve
-		.catch(error => console.log({ error })) // reject
+		.then(result => console.log(1, { result })) // resolve se relaciona con then
+		.catch(error => console.log(2, { error })) // reject se relaciona con catch
 </script>
